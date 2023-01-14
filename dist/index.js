@@ -1,0 +1,1 @@
+"use strict";module.exports=function(n){var e=this;return new Promise((function(t,u){if("function"==typeof n&&(n=n.apply(e)),!n||"function"!=typeof n.next)return t(n);!function e(o){var i=n.next(o);if(i.done)return t(i.value);i.value instanceof Promise?i.value.then((function(n){e(n)}),(function(n){return u(n)})):e(i.value)}(void 0)}))};
